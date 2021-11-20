@@ -122,6 +122,14 @@ Add Git:
     >_ git remote add origin https://github.com/ShaonMajumder/Accounts.git
     >_ git push -f origin master
 
+## Multi-Authentication Fixed
+https://hdtuto.com/article/multi-database-connection-in-laravel-8-example
+https://dev.to/donejeh/common-mistake-sharing-session-across-multiple-laravel-subdomain-2a51
+https://stackoverflow.com/questions/31847054/how-to-use-multiple-databases-in-laravel
+
+## Redirection after login from another site
+class RedirectIfAuthenticated
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
