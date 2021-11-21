@@ -26,7 +26,7 @@ Set Host:
 
 Add :
     
-    127.0.0.1	accounts.robist.test
+    127.0.0.1	*.robist.test
 
 Enable Vhost:
 
@@ -129,6 +129,9 @@ https://stackoverflow.com/questions/31847054/how-to-use-multiple-databases-in-la
 
 ## Redirection after login from another site
 class RedirectIfAuthenticated
+
+## laravel.log error
+chmod -R 777 storage/
 
 ## About Laravel
 
