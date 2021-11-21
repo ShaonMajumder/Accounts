@@ -20,6 +20,7 @@
                 <table class="table table-striped table-bordered table-hover mb-5">
                     <thead>
                         <tr class="table-success">
+                            <th scope="col">Actions</th>
                             <th scope="col">#</th>
                             <th scope="col">Name</th>
                             <th scope="col">Last name</th>
@@ -28,7 +29,8 @@
                     <tbody>
                         @foreach($users as $data)
                         <tr>
-                            <th scope="row">{{ $data->id }}</th>
+                            <td scope="row"></td>
+                            <th>{{ $data->id }}</th>
                             <td>{{ $data->name }}</td>
                             <td>{{ $data->email }}</td>
                         </tr>
