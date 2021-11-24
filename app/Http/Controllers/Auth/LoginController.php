@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class LoginController extends Controller
 {
@@ -40,13 +41,14 @@ class LoginController extends Controller
     }
 
     public function authenticated(Request $request, $user) {
-        $back_url = session('back_url');
-        session(['back_url' => '']);
-        return redirect($back_url);
+        if (Session::has('back_url')){
+            $back_url = session('back_url');
+            session(['back_url' => '']);
+            return redirect($back_url);
+        }
     }
     
-    function loggedOut(Request $request)
-    {
+    function loggedOut(Request $request) {
         return redirect()->back();
     }
 }

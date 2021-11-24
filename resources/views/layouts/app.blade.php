@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @yield('top-css')
 </head>
 <body>
     <div id="app">
